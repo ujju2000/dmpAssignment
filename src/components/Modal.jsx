@@ -9,7 +9,7 @@ export default function Modal() {
 
     const sendEmail = (e) => {
     e.preventDefault();
-
+    alert('information submitted successfully');
     emailjs.sendForm('service_0c3wr1c', 'template_bspjl2s', form.current, 'M8mv6attyx7PfSJom')
         .then((result) => {
             console.log(result.text);
@@ -85,7 +85,9 @@ export default function Modal() {
                     <input type = 'text' name = 'user_phone' className='border border-2  p-2 my-2' placeholder = "Phone"/>
                     
                     <input type="text" name="user_destination"  className='border border-2  p-2 my-2 ' placeholder = "Destination" />
-                    <input type="submit" value="Send"  className = 'bg-red-400 text-white w-1/3 mx-auto my-4 rounded-md font-semibold p-2' />
+                    <input type="submit" value="Send"  className = 'bg-red-400 text-white w-1/3 mx-auto my-4 rounded-md font-semibold p-2' 
+
+                    />
                 </form>
                     <button
                       type="button"
