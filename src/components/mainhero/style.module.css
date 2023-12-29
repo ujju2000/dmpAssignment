@@ -1,0 +1,7 @@
+.main {
+    background :  url('/public/assets/heroBack.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center center;     
+    
+}
